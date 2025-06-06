@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servo-motor</title>
+</head>
+<body>
+    <header>
+        <h1>La base de todo</h1>
+        <div>
+            <a href="index.html">Inicio</a>
+            <a href="programa.html">Programacion</a>
+            <a href="robot.html">Robotica</a>
+            <a href="#info">Información</a>
+        </div>
+    </header>
+    <main>
+    <article class="TB">
+        <h1>Led RGB</h1>
+    </article>
+            <p>
+            Aqui eprenderas a hacer que una luz LED RGB cambie de color,
+            y te explicaremos el proceso paso a paso.
+            </p>
+            <div class="general-container">
+                <div class="general">
+                    <img class="card-img" src="img\led.jpg" alt="servo">
+                </div>
+            </div>
+            <h2>Codigo del Led RGB</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img class="card-img" src="img\C.ledRGB.png" alt="codigo">
+                    <a class="card-text" href="codigoled.html">Codigo</a>
+                </div>
+            </div>
+            <h2>¿Qué es un led RGB?</h2>
+            <ul>
+                <li>Un LED RGB tiene 3 LEDs en uno solo: uno rojo, uno verde, y uno azul. Combinando esos tres puedes 
+                    crear casi cualquier color.</li>
+                <li>Los LEDs RGB pueden ser de dos tipos: ánodo común o cátodo común.</li>
+                <li>El ánodo común tiene un pin que se conecta a 5V, mientras que el cátodo común tiene un pin que se 
+                    conecta a GND. El cátodo común es el más común.</li>
+                <li>⚠️ Este ejemplo es para un LED RGB cátodo común.</li>
+            <div class="general-container">
+                <div class="general">
+                    <img class="card-img" src="img\ledrgb.jpg" alt="arduino">
+                </div>
+            </div>
+
+            <h2>🔌 Conexiones al Arduino</h2>
+            <div class="general-container">
+                <div class="general">
+                    <img class="card-img" src="img\arduino.webp" alt="arduino">
+                </div>
+            </div>
+                <li>Materiales:</li>
+                <li>Arduino UNO</li>
+                <li>Led RGB</li>
+                <li>3 resistencia de 220Ω o 330Ω</li>
+                <li>Cables</li>
+
+                <li>Pin más largo (común)	GND (tierra)</li>
+                <li>Patitas de color:</li>
+                <li>Rojo → Pin 6 (PWM)</li>
+                <li>Verde → Pin 5 (PWM)</li>
+                <li>Azul → Pin 3 (PWM)</li>
+
+                <li>📌 Conecta una resistencia (~220Ω o 330Ω) entre cada patita de color y su cable, para proteger el LED.</li>
+            </ul>
+            <h2>Explicacion del Codigo</h2>
+                <li>int rojo = 9;</li>
+                <li>int verde = 10;</li>
+                <li>int azul = 11;</li>
+                <li>Define los pines donde está conectado cada color del LED.</li>
+                <li>void setup() {</li>
+
+                <li>pinMode(rojo, OUTPUT);</li>
+                <li>pinMode(verde, OUTPUT);</li>
+                <li>pinMode(azul, OUTPUT);}</li>
+                <li>Indica que esos pines enviarán señal de salida.</li>
+
+                <li>setColor(255, 0, 0); // Rojo</li>
+                <li>delay(1000);</li>
+                <li>Esto enciende solo el rojo al máximo. Luego espera 1 segundo.
+                setColor(r, g, b) permite mezclar los tres colores.</li>
+
+                <li>analogWrite(rojo, 255 - r);</li>
+
+
+                <li>Usamos analogWrite() para enviar señales PWM (modulación de ancho de pulso), que permite 
+                    cambiar el brillo de cada color.</li>
+                <li>Por ejemplo, analogWrite(rojo, 255) enciende el rojo al máximo, mientras que analogWrite(rojo, 0) lo apaga.</li>
+                <li>💡 ¿Por qué 255 - r?</li>
+                <li>Porque como es cátodo común, la lógica se invierte:</li>
+                <li>0 = encendido al máximo</li>
+                <li>255 = apagado</li>
+
+            </ul>
+    <footer>
+        Todos los derechos reservados 2025
+    </footer>
+</body>
+</html>

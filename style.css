@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+     background-image: url(img\vector.png);
+     background: linear-gradient(90deg, rgba(4, 145, 201, 0.76) 0%, rgba(48, 114, 255, 0.76) 44%, rgba(0, 40, 219, 0.76) 100%);
+     background-repeat: no-repeat;
+     background-size: 100% 100vh;
+     background-attachment: fixed;
+     margin: 0;
+     text-align: center;
+ }
+
+p{
+    font-size: 30px;
+    vertical-align: middle;
+    display: inline-block;
+    width: 650px;
+    color:white;
+    padding: 50px 5%;
+}
+header,footer{
+    font-size: 20px;
+    padding: 5px 5%;
+    background-color: rgb(91, 222, 245);
+}
+header > *{
+    display: inline-block;
+    width: 450px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+}
+#opciones{
+    color: white;
+    font-size: 1.2em;
+}
+h2{
+    font-size: 40px;
+    color:white;
+    padding: 25px 5%;
+}
+.TB {
+    padding: 5% 5%;
+    color: white;
+    font-size: 30px;
+}
+img{
+     width:200px;
+     height:200px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 15px;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 0;
+}
+
+/* Update existing img styles to not affect our new card images */
+img:not(.card-img) {
+    width: 300px;
+    height: 200px;
+}
+li{
+    font-size: 30px;
+    vertical-align: middle;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 10%;
+    color:white;
+}
+.general-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.general {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 15px;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+pre{
+    font-size: 20px;
+    color: white;
+    padding: 20px 5%;
+}
+
+
+
+
+
+
+
+
+

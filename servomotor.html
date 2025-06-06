@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servo-motor</title>
+</head>
+<body>
+    <header>
+        <h1>La base de todo</h1>
+        <div>
+            <a href="index.html">Inicio</a>
+            <a href="programa.html">Programacion</a>
+            <a href="robot.html">Robotica</a>
+            <a href="#info">Información</a>
+        </div>
+    </header>
+    <main>
+    <article class="TB">
+        <h1>Servo-motor</h1>
+    </article>
+            <p>
+            En esta pestaña aprenderas a hacer que un servo-motor gire 90 grados cada vez que un sensor a distancia detecte
+            movimiento y te explicaremos el proceso paso a paso
+            </p>
+            <div class="general-container">
+                <div class="general">
+                    <img class="card-img" src="img\servo.jpg" alt="servo">
+                </div>
+            </div>
+            <h2>Codigo del Servo-motor</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img class="card-img" src="img\C.servo.png" alt="codigo">
+                    <a class="card-text" href="codigo.html">Codigo</a>
+                </div>
+            </div>
+            <h2>¿Qué hace este código?</h2>
+            <ul>
+                <li>Usa un sensor digital (como un botón, PIR, sensor magnético, etc.)</li>
+
+                <li>Cada vez que el sensor cambia de HIGH a LOW (flanco de bajada), el servo cambia de posición: Si estaba
+                     en 0°, pasa a 90° Si estaba en 90°, vuelve a 0° Es como un interruptor de dos posiciones: clic → se 
+                     mueve, clic → vuelve</li>
+
+            <h2>🔌 Conexiones al Arduino</h2>
+            <div class="general-container">
+                <div class="general">
+                    <img class="card-img" src="img\arduino.webp" alt="arduino">
+                </div>
+            </div>
+                <li>Materiales:</li>
+                <li>Arduino UNO</li>
+                <li>Servomotor (como SG90)</li>
+                <li>Botón o sensor digital (PIR, imán, etc.)</li>
+                <li>1 resistencia de 10kΩ si usas botón</li>
+                <li>Cables</li>
+
+            <h2>Si usas un BOTÓN:</h2>
+
+                <li>Un lado del botón → Pin 2</li>
+                <li>Mismo lado del botón → Resistencia de 10kΩ a GND</li>
+                <li>Otro lado del botón → 5V</li>
+
+            <p>Esto se llama pull-down manual. Alternativamente, puedes usar INPUT_PULLUP en el código y conectar el 
+                botón entre GND y el pin (más fácil).</p>
+            
+            <h2>Servomotor</h2>
+            <div class="general-container">
+                <div class="general">
+                    <img class="card-img" src="img\servomo.jpg" alt="servo">
+                </div>
+            </div>
+                <li>Cable rojo → 5V en Arduino</li>
+                <li>Cable marrón/negro → GND</li>
+                <li>Cable amarillo/naranja → Pin 9</li>
+
+            <h2>¿Qué es "flanco de bajada"?</h2>
+
+                <li>En digital: HIGH (1) = encendido, LOW (0) = apagado.</li>
+                <li>Un flanco de bajada es cuando una señal pasa de HIGH a LOW.</li>
+                <li>El código detecta exactamente ese momento para que no se repita la acción varias veces mientras el botón 
+                    está presionado.</li>
+            </ul>
+    <footer>
+        Todos los derechos reservados 2025
+    </footer>
+</body>
+</html>

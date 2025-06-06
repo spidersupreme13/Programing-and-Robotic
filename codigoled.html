@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+    <header>
+        <h1>La base de todo</h1>
+        <div>
+            <a href="index.html">Inicio</a>
+            <a href="programa.html">Programacion</a>
+            <a href="robot.html">Robotica</a>
+            <a href="#info">Información</a>
+        </div>
+    </header>
+    <h2>Copia y pega el codigo en arduino</h2>
+    <pre><code>
+int rojo = 9;
+int verde = 10;
+int azul = 11;
+
+void setup() {
+  pinMode(rojo, OUTPUT);
+  pinMode(verde, OUTPUT);
+  pinMode(azul, OUTPUT);
+}
+
+void loop() {
+  setColor(255, 0, 0);   // Rojo
+  delay(1000);
+  setColor(0, 255, 0);   // Verde
+  delay(1000);
+  setColor(0, 0, 255);   // Azul
+  delay(1000);
+  setColor(255, 255, 0); // Amarillo
+  delay(1000);
+  setColor(0, 255, 255); // Cyan
+  delay(1000);
+  setColor(255, 0, 255); // Magenta
+  delay(1000);
+  setColor(255, 255, 255); // Blanco
+  delay(1000);
+  setColor(0, 0, 0);     // Apagado
+  delay(1000);
+}
+
+// Función para mezclar colores
+void setColor(int r, int g, int b) {
+  analogWrite(rojo, 255 - r);
+  analogWrite(verde, 255 - g);
+  analogWrite(azul, 255 - b);
+}
+</code></pre>
+    <footer>
+        Todos los derechos reservados 2025
+    </footer>
+</main>
+</body>
+</html>
