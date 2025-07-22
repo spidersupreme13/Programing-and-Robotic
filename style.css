@@ -1,10 +1,59 @@
-@media (max-width: 600px) {
-  .general-container, .card-img {
-    width: 100%;
-    font-size: 1em;
-  }
-  /* Otros ajustes para móviles */
+body {
+    text-align: left;
+    padding: 0;
 }
+p, li {
+    font-size: 18px;
+    width: 95vw;
+    padding: 10px 2vw;
+    display: block;
+}
+header, footer {
+    font-size: 16px;
+    padding: 10px 2vw;
+    width: 100vw;
+    box-sizing: border-box;
+}
+h2 {
+    font-size: 24px;
+    padding: 10px 2vw;
+}
+.TB {
+    font-size: 20px;
+    padding: 10px 2vw;
+}
+.card-img, img, img:not(.card-img) {
+    width: 100vw !important;
+    height: auto !important;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+.general, .card, .general-container, .card-container {
+    width: 95vw !important;
+    min-width: unset;
+    max-width: 100vw;
+    padding: 10px 2vw;
+    flex-direction: column;
+    align-items: center;
+}
+.card {
+    width: 100% !important;
+    min-width: unset;
+    max-width: 100vw;
+}
+a {
+    font-size: 1em;
+    margin: 5px 0;
+    display: block;
+}
+pre {
+    font-size: 14px;
+    padding: 10px 2vw;
+    overflow-x: auto;
+}
+
+
 *{
     margin: 0;
     padding: 0;
