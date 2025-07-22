@@ -1,3 +1,10 @@
+@media (max-width: 600px) {
+  .general-container, .card-img {
+    width: 100%;
+    font-size: 1em;
+  }
+  /* Otros ajustes para móviles */
+}
 *{
     margin: 0;
     padding: 0;
