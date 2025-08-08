@@ -155,7 +155,7 @@ pre{
         width: 90%;
     }
     .card-img {
-        height: 150px;
+        height: 100px;
     }
     .card-text {
         font-size: 1em;
@@ -195,6 +195,7 @@ pre{
         height: auto;
     }
 }
+
 
 
 
