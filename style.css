@@ -195,6 +195,7 @@ pre{
         height: auto;
     }
 }
+
 @media (max-width: 767px) {
     body {
         background: 
@@ -205,12 +206,12 @@ pre{
     }
     
     p {
-        font-size: 20px;
+        font-size: 30px;
         width: 90%;
     }
     
     h2 {
-        font-size: 30px;
+        font-size: 45px;
     }
     
     .card-container {
@@ -223,7 +224,7 @@ pre{
     }
     
     .card-img {
-        height: 150px;
+        height: 130px;
     }
     
     .card-text {
@@ -231,7 +232,7 @@ pre{
     }
     
     li {
-        font-size: 20px;
+        font-size: 25px;
         padding: 10px 5%;
     }
     
@@ -240,12 +241,12 @@ pre{
     }
     
     pre {
-        font-size: 16px;
+        font-size: 20px;
         padding: 10px 5%;
     }
     
     header, footer {
-        font-size: 16px;
+        font-size: 20px;
         padding: 5px 2%;
     }
     
