@@ -196,7 +196,7 @@ pre{
     }
 }
 
-@media (min-width: 768px) and (max-width: 970px) {
+@media (min-width: 768px) and (max-width: 890px) {
     body {
         background: 
             linear-gradient(90deg, rgba(4, 145, 201, 0.76) 0%, rgba(48, 114, 255, 0.76) 44%, rgba(0, 40, 219, 0.76) 100%),
@@ -263,6 +263,7 @@ pre{
         padding: 10px 2%;
     }
 }
+
 
 
 
